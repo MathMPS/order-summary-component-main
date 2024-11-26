@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: "Red Hat Display", serif;
+    font-size: 16px;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: white;
+    max-width: 448px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.main-img img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.info{
+    padding: 0 2.5rem 2.5rem 3rem;
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 1rem;
+}
+
+p{
+    padding: 0 1rem 0 1rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    margin-bottom: 1rem;
+}
+
+.value-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.value-icon{
+    display: flex;
+}
+
+.value-section img{
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+th{
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+td{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.value-section a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+.value-section a:hover{
+    opacity: 80%;
+    text-decoration: none;
+}
+
+
+.btn-section{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: .8rem;
+    border-radius: .7rem;
+    font-weight: 900;
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+.btn-blue{
+    background-color: var(--Bright-blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 15px 10px 0 var(--Pale-blue);
+    margin-bottom: 1.5rem;
+}
+
+.btn-section a{
+    color: var(--Desaturated-blue);
+    border: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: .8rem;
+}
+
+.btn-section a:hover{
+    color: var(--Dark-blue);
+}
